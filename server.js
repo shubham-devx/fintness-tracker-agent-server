@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/agent", agentRoute);
+app.use("/api/agent/generate", agentRoute);
 
 app.get("/", (req, res) => {
   res.send("AI Gym Agent Running 💪");
